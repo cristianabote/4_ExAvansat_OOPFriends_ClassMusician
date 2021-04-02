@@ -45,7 +45,10 @@ public class Main {
 
             Musician person = new Musician(name, age, instrument, musicalType, status);
             personGroup[i] = person;
-
+                /*    if(personGroup[i].getStatus() !="active" || personGroup[i].getStatus()!="inactive"){
+                System.out.println("Ati introdus un status eronat.");
+                break;
+            }*/
         }
         // Arrays.sort(personGroup);
         for (int i = 0; i < numberOfPersons; i++) {
@@ -72,8 +75,8 @@ public class Main {
 
         System.out.println(" ");
         System.out.println("Toti muzicienii activi sunt urmatorii: ");
-        for (int j = 0; j < numberOfPersons; j++) { //vizualizarea muzicienilor activi
-            personGroup[j].activeMusician();
+        for (int i = 0; i < numberOfPersons; i++) { //vizualizarea muzicienilor activi
+            personGroup[i].activeMusician();
         }
 
     }

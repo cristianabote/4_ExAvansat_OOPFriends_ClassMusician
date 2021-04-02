@@ -75,8 +75,8 @@ public class Musician extends Person {
     }
 
     public void activeMusician() {
-        if (this.getStatus().equals("active")) {
-            System.out.println( "Muzicianul " + super.getName() + " are statusul de: " + this.getStatus());
+        if (this.status.equals("activ")) {
+            System.out.println( "Muzicianul " + super.getName() + " are statusul de: " + this.status);
         }
     }
 }
